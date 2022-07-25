@@ -7,6 +7,7 @@ import { HiVolumeUp, HiVolumeOff } from "react-icons/hi";
 import { BsPlay, BsFillPlayFill, BsFillPauseFill } from "react-icons/bs";
 import { GoVerified } from "react-icons/go";
 import { GiTyre } from "react-icons/gi";
+import { BASE_URL } from "../utils";
 interface IProps {
   post: Video;
 }
@@ -67,7 +68,7 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
           onMouseLeave={() => setIsHover(false)}
           className="rounded-3xl"
         >
-          <Link href="/">
+          <Link href={`/detail/${post._id}`}>
             <video
               loop
               ref={videoRef}
