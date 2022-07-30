@@ -28,7 +28,7 @@ export const getServerSideProps = async ({
   query: { topic: string };
 }) => {
   let response = null;
-
+  //sdk
   if (topic) {
     response = await axios.get(`${BASE_URL}/api/discover/${topic}`);
   } else {
