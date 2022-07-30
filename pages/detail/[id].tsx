@@ -37,7 +37,6 @@ const Detail = ({ postDetails }: IProps) => {
       setPlaying(true);
     }
   };
-  if (!post) return null;
 
   useEffect(() => {
     if (post && videoRef?.current) {
