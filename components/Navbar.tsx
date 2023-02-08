@@ -58,7 +58,7 @@ const Navbar = () => {
         {userProfile ? (
           <div className="flex gap-5 md:gap-10">
             <Link href="/upload">
-              <button className="border-2 px-2 md:px-4 text-md font-semibold flex items-center gap-2">
+              <button className="hover:rounded-lg  hover:bg-[#5897f5]  border-2 px-2 md:px-4 text-md font-semibold flex items-center gap-2">
                 <IoMdAdd className="text-xl" />{" "}
                 <span className="hidden md:block">Upload </span>
               </button>
@@ -69,7 +69,7 @@ const Navbar = () => {
                   <Image
                     width={40}
                     height={40}
-                    className="rounded-full cursor-pointer"
+                    className="rounded-full cursor-pointer hover:rounded-lg transition ease-out"
                     src={userProfile.image}
                     alt="Profile Photo"
                   />
@@ -78,7 +78,7 @@ const Navbar = () => {
             )}
             <button
               type="button"
-              className=" border-2 p-2 rounded-full cursor-pointer outline-none shadow-md"
+              className=" border-2 p-2 rounded-full cursor-pointer outline-none shadow-md hover:shadow-sm"
               onClick={() => {
                 googleLogout();
                 removeUser();
