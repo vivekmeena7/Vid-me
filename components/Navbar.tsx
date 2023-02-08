@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="w-[100px] md:w-[130px] ">
           <Image
             className="cursor-pointer"
-            src={Logo}
+            src="https://www.clipartmax.com/png/small/350-3502339_vidme-was-a-video-sharing-platform-with-a-focus-on-vidme-logo.png"
             alt="TikTIk"
             layout="responsive"
           />
