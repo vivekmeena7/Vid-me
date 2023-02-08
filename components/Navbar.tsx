@@ -8,7 +8,7 @@ import { IoMdAdd } from "react-icons/io";
 import { GoogleLogin, googleLogout } from "@react-oauth/google";
 import useAuthStore from "../store/authStore";
 
-import Logo from "../utils/tiktik-logo.png";
+import Logo from "../utils/tiktok-logo.png";
 import { createOrGetUser } from "../utils";
 const Navbar = () => {
   const { userProfile, addUser, removeUser } = useAuthStore();
